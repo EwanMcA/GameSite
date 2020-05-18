@@ -1,0 +1,17 @@
+.GamePage {
+  display: flex;
+}
+
+.panel {
+  background-color: #00AAFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 7vw;
+}
+
+.content-pane {
+  width: 93vw;
+  text-align: center;
+}
