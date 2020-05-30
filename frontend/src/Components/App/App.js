@@ -7,7 +7,7 @@ import GamePage from '../GamePage/GamePage'
 
 const App = () => {
     return (
-        <>
+        <div className="app">
             <nav className="nav">
                 <Link to="/">Home</Link>
                 <Link to="PlanIt">PlanIt</Link>
@@ -16,7 +16,7 @@ const App = () => {
                 <Home path="/" />
                 <GamePage path=":gameUrl" />
             </Router>
-        </>
+        </div>
     );
 }
 

@@ -1,8 +1,16 @@
 .app {
   display: flex;
+  flex-direction: row;
 }
 
 .nav {
+  background-color: #d7f0ff;
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+}
+
+.nav a {
+  margin-bottom: 1rem;
+  text-decoration: none;
 }
