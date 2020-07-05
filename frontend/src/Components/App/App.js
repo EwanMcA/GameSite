@@ -3,6 +3,7 @@ import { Link, Router } from '@reach/router';
 
 import './App.css';
 import Home from '../Home/Home'
+import GameMenu from '../GameMenu/GameMenu'
 import GamePage from '../GamePage/GamePage'
 
 const App = () => {
@@ -14,7 +15,8 @@ const App = () => {
             </nav>
             <Router>
                 <Home path="/" />
-                <GamePage path=":gameUrl" />
+                <GameMenu path=":gameUrl" />
+                <GamePage path=":gameUrl/:gameID" />
             </Router>
         </div>
     );

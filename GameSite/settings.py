@@ -128,4 +128,9 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'frontend', "build", "static"),  # update the STATICFILES_DIRS
 )
 
-CORS_ORIGIN_ALLOW_ALL = True # added to solve CORS
+# CORS_ORIGIN_ALLOW_ALL = True # added to solve CORS
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://192.168.0.11:3000',
+    'http://0.0.0.0:3000',
+]

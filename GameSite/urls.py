@@ -20,6 +20,8 @@ from api import views
 urlpatterns = [
     path('core/', include('core.urls')),
     path('admin/', admin.site.urls),
-    path('players', views.players, name='players'),
+    path('new_game', views.new_game, name='new_game'),
+    path('<int:game_id>/players', views.players, name='players'),
+    path('<int:game_id>/new_player', views.new_player, name='new_player'),
     path('board/<int:id>', views.board, name='board'),
 ]

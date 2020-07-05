@@ -1,16 +1,18 @@
 .app {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .nav {
-  background-color: #d7f0ff;
+  border-bottom: 1px solid grey;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 1rem;
 }
 
 .nav a {
-  margin-bottom: 1rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
   text-decoration: none;
 }
